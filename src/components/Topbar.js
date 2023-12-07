@@ -40,11 +40,11 @@ function Navbar() {
             {/* Content for My work tab if needed */}
           </Tab>
           <Tab
-            eventKey="/contact"
+            eventKey="/report"
             title={
               <>
                 <CalendarTodayOutlinedIcon style={{ marginRight: "5px" }} />
-                Blog
+                Report
               </>
             }
           >

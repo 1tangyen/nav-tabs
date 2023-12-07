@@ -1,0 +1,122 @@
+/* ReportGenerateForm.css */
+
+.report-generate-form-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the start of the container */
+    align-items: flex-start;
+    /* Align items to the top */
+    min-height: calc(100vh - 20px);
+    /* Slightly less than the full viewport height to allow for margin */
+    padding-top: 10px;
+    /* Padding at the top */
+    padding-bottom: 10px;
+    /* Padding at the bottom */
+    flex-direction: column;
+}
+
+.report-generate-form-wrapper {
+    width: 80%;
+    /* Increase width from 50% to 70% */
+    max-width: 960px;
+    /* Increase max-width for larger screens */
+    margin: 10px auto;
+    /* Small margin at the top, centered horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    /* Padding inside the wrapper */
+    background: #fff;
+    border-radius: 8px;
+}
+
+.tabbed-component-container {
+    background-color: #f8f9fa;
+    /* Light gray background, adjust as desired */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add space between the tabbed component and progress bar */
+}
+
+.progress-bar-container {
+    background-color: #e9ecef;
+    /* Slightly darker gray background, adjust as desired */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add space between the progress bar and form */
+}
+
+.form-content {
+    background-color: #fff;
+    /* White background for the form */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Ensure you import the CSS file in your MainForm component */
+
+/* MainForm.css */
+.main-form-container {
+    padding: 20px;
+    max-width: 800px;
+    /* Adjust as needed for your design */
+    margin: auto;
+    /* Center the form in the middle of the page */
+}
+
+/* Style the TabbedComponent to add spacing below it */
+.tabbed-component-classname {
+    margin-bottom: 30px;
+    /* Space below the tabbed component */
+}
+
+/* Style the ProgressBarComponent to add spacing below it */
+.progress-bar-component-classname {
+    margin-bottom: 30px;
+    /* Space below the progress bar */
+}
+
+/* Add bottom margin to form groups to separate them from each other */
+.form-group {
+    margin-bottom: 20px;
+    /* Space between form groups */
+}
+
+/* Add spacing around buttons */
+.form-buttons-container {
+    margin-top: 20px;
+    /* Space above the button group */
+    display: flex;
+    justify-content: flex-end;
+    /* Align buttons to the right */
+}
+
+/* Individual button styling */
+.form-button {
+    margin-right: 10px;
+    /* Space between buttons */
+    margin-bottom: 20px;
+    /* Space below the buttons if they wrap */
+}
+
+/* Last button does not need right margin */
+.form-button:last-child {
+    margin-right: 0;
+}
+
+.required::before {
+    content: " *";
+    color: red;
+}
+
+/* Ensure the ProgressBar label is centered if it's not already */
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* Color of the text inside the progress bar */
+    font-weight: bold;
+    /* Make it bold */
+}
