@@ -9,6 +9,16 @@ import SourceDataForm from "../components/SourceDataForm";
 const MainForm = () => {
   const [activeTab, setActiveTab] = useState("Step1");
 
+  const handleNavigation = (action) => {
+    const tabs = ["Step1", "Step2", "Step3", "Summary", "Complete"];
+    const currentIndex = tabs.indexOf(activeTab);
+    if (action === "next" && currentIndex < tabs.length - 1) {
+      setActiveTab(tabs[currentIndex + 1]);
+    } else if (action === "prev" && currentIndex > 0) {
+      setActiveTab(tabs[currentIndex - 1]);
+    }
+  };
+
   const progressValues = {
     Step1: 0,
     Step2: 25,
